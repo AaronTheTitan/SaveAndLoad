@@ -53,6 +53,20 @@ class ViewController: UIViewController {
         }
 
         // Text Loading and Saving
+        let textPath = fileInDocumentsDirectory("help.txt")
+        let status = saveText("Save ME Yo!", path: textPath)
+        println("Saved text: \(status)")
+
+        // Load text
+//        let loadedText = loadTextFromPath(textPath)
+//        if loadedText != nil {
+//            println("Loaded Text: \(loadedText!)")
+//        }
+
+        if let loadedText = loadTextFromPath(textPath) {
+            println("Loaded Text v2: \(loadedText)")
+        }
+
 
     }
 
@@ -71,17 +85,26 @@ class ViewController: UIViewController {
     }
 
     // Save text
-    func saveText(text: String, path: String) {
+    func saveText(text: String, path: String) -> Bool {
         var error: NSError? = nil
         let status = text.writeToFile(path, atomically: true, encoding: NSUTF8StringEncoding, error: &error)
 
         if !status {
             println("Error saving file at path: \(path) with error: \(error?.localizedDescription)")
         }
+
+        return status
     }
 
     // Load text
-
+    func loadTextFromPath(path: String) -> String? {
+        var error: NSError? = nil
+        let text = String(contentsOfFile: path, encoding: NSUTF8StringEncoding, error: &error)
+        if text == nil {
+            println("Error loading text from path: \(path) with Error: \(error?.localizedDescription)")
+        }
+        return text
+    }
 
 
     override func didReceiveMemoryWarning() {
