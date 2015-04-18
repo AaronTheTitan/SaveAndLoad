@@ -13,6 +13,7 @@
 		912328F61AE1C42300B61257 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 912328F51AE1C42300B61257 /* Images.xcassets */; };
 		912328F91AE1C42300B61257 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 912328F71AE1C42300B61257 /* LaunchScreen.xib */; };
 		912329051AE1C42300B61257 /* SaveAndLoadTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912329041AE1C42300B61257 /* SaveAndLoadTests.swift */; };
+		916BFEC71AE1C92E008B1662 /* photo.png in Resources */ = {isa = PBXBuildFile; fileRef = 916BFEC61AE1C92E008B1662 /* photo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		912328FE1AE1C42300B61257 /* SaveAndLoadTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SaveAndLoadTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		912329031AE1C42300B61257 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		912329041AE1C42300B61257 /* SaveAndLoadTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveAndLoadTests.swift; sourceTree = "<group>"; };
+		916BFEC61AE1C92E008B1662 /* photo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = photo.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				912328EE1AE1C42300B61257 /* AppDelegate.swift */,
 				912328F01AE1C42300B61257 /* ViewController.swift */,
 				912328F21AE1C42300B61257 /* Main.storyboard */,
+				916BFEC61AE1C92E008B1662 /* photo.png */,
 				912328F51AE1C42300B61257 /* Images.xcassets */,
 				912328F71AE1C42300B61257 /* LaunchScreen.xib */,
 				912328EC1AE1C42300B61257 /* Supporting Files */,
@@ -194,6 +197,7 @@
 			files = (
 				912328F41AE1C42300B61257 /* Main.storyboard in Resources */,
 				912328F91AE1C42300B61257 /* LaunchScreen.xib in Resources */,
+				916BFEC71AE1C92E008B1662 /* photo.png in Resources */,
 				912328F61AE1C42300B61257 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -409,6 +413,7 @@
 				9123290A1AE1C42300B61257 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9123290B1AE1C42300B61257 /* Build configuration list for PBXNativeTarget "SaveAndLoadTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +422,7 @@
 				9123290D1AE1C42300B61257 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
